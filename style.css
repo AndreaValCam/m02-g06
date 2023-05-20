@@ -106,7 +106,7 @@ p {
 
 .proyects_hover{
 	position: absolute;
-	background-color: rgb(100,100,100, 0.7);
+	background-color: rgb(40,40,40, 0.7);
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -135,7 +135,8 @@ p {
 	padding: 20px;
 	top:-20px;
 	left: 0;
-	color: #710101;
+	color: #5BC840;
+	text-shadow: 0px 0px 2px #5BC840;
 }
 
 #autorinicio {
@@ -145,6 +146,7 @@ p {
 	bottom: 0;
 	right: 20px;
 	color: black;
+	text-shadow: 0px 0px 1px #000000;
 }
 
 .boton {
