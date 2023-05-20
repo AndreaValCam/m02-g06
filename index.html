@@ -9,7 +9,7 @@
 // <![CDATA[
 var height=5; // number of rows - must be an odd number
 var speed=80; // lower is faster
-var reveal=1000; // between 0 and 100
+var reveal=100; // between 0 and 100
                // the higher, the faster the word is 'decoded'
 var repeat=0; // if '0' the script does not repeat
                // if set to a number this is the number of seconds until the script repeats
@@ -108,7 +108,7 @@ function newtricks(c) {
 	}
 	if (m_copo[c]>1 && m_copo[c]<height+2) {
 	  table.rows[m_copo[c]-2].cells[c].style.fontWeight="normal";
-	  table.rows[m_copo[c]-2].cells[c].style.color="#33ff33";
+	  table.rows[m_copo[c]-2].cells[c].style.color="#5BC840";
 	}
     if (m_copo[c]>2 && m_copo[c]<height+3) table.rows[m_copo[c]-3].cells[c].style.color="#00cc00";
 	if (m_copo[c]>=height && m_copo[c]<2*height) table.rows[m_copo[c]-height].cells[c].style.color="#006600";
@@ -151,10 +151,10 @@ function zoomer(c) {
 	mtem=table.rows[200+height-m_copo[c]].cells[c];
     m_copo[c]-=1;
     mtmp.style.fontWeight="normal";
-	mtmp.style.color="#33ff33";
+	mtmp.style.color="#5BC840";
 	mtmp.style.textShadow="none";
     mtem.style.fontWeight="normal";
-	mtem.style.color="#33ff33";
+	mtem.style.color="#5BC840";
 	mtem.style.textShadow="none";
     setTimeout("zoomer("+c+")", speed);
   }
