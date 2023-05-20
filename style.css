@@ -42,3 +42,70 @@ footer {
 	width: 100%;
 	height: 100%;
 }
+
+
+
+
+
+
+.proyects_grid {
+	background: black;
+}
+
+.proyects_grid {
+	display: grid;
+	height: 550px;
+	grid-template-areas: 
+	"img1 img2 img3" 
+	"img1 img2 img3" ;
+	gap:10px ;
+	margin: 14% 0px;
+	display: inline-flex;
+	width: 100%;
+	z-indez: 2;
+}
+
+
+.proyects_item {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden ;
+}
+
+.proyects_img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+
+
+
+.proyects_hover{
+	position: absolute;
+	background: #5bc840;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex: column;
+	justify-content: center;
+	transform: translateX(100%);
+	cursor: pointer;
+	transition: transform .3s ease-in-out;
+}
+
+.proyects_item:hover .proyects_hover {
+	transform: translateX(0%);
+}
+
+.proyects_icon {
+	margin-top: 10px;
+	font-size: 30px;
+
+}
