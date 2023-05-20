@@ -14,7 +14,7 @@ var reveal=1000; // between 0 and 100
 var repeat=0; // if '0' the script does not repeat
                // if set to a number this is the number of seconds until the script repeats
 var font=27;   // size of font to use
-var alink="http://www.mf2fm.com/rv"; // place to link to
+var alink=""; // place to link to
                                       // set to alink="" if not needed
 /***************************\
 * The Matrix JavaScripted.. *
@@ -179,15 +179,18 @@ function zoomer(c) {
 	</div>
 </header>
 
-<main>
+<main class="inicio">
   <div class="container">
     <div class="proyects_grid">
       <article class="proyects_item">
+        <a href="page-1.html" class="links">
         <img src="img/img1.png" class="proyects_img">
         <div class="proyects_hover">
-          <h2 class="proyects_title">nombre lokito proyecto </h2>
+          <h1 id="tituloinicio">A Manifesto for Postindustrial Design</h1>
+          <h2 id="autorinicio">Jamer Hunt</h2>
           <i class="far fa-file-alt proyects_icon"></i>
         </div>  
+        </a>
       </article>
 
        <article class="proyects_item">
@@ -199,11 +202,14 @@ function zoomer(c) {
       </article>
 
        <article class="proyects_item">
+        <a href="page-2.html" class="links">
         <img src="img/img3.jpeg" class="proyects_img">
         <div class="proyects_hover">
-          <h2 class="proyects_title">Proyecto</h2>
+          <h1 id="tituloinicio">Stranger Visions</h1>
+          <h2 id="autorinicio">Heather Dewey-Hagborg</h2>
           <i class="far fa-file-alt proyects_icon"></i>
         </div>  
+      </a>
       </article>
 
     </div>
