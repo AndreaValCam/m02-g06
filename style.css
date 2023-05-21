@@ -4,6 +4,7 @@ html {
 	font-size: 10px;
 	scrollbar-color: #000 #fff;
 	scrollbar-width: thin;
+	background-color: black;
 }
 
 ::selection {
@@ -48,6 +49,10 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+#about {
+		background-color: white;
+		margin-bottom: -20px;
 }
 
 #about .contenedor{
