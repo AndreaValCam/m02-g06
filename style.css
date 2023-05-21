@@ -2,6 +2,13 @@ html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
 	font-size: 10px;
+	scrollbar-color: #000 #fff;
+	scrollbar-width: thin;
+}
+
+::selection {
+	background-color: black;
+	color: white;
 }
 
 body {
@@ -10,6 +17,11 @@ body {
 	overflow-x: hidden;
 }
 
+.cuerpo {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
 header {
 	text-align: center;
 	z-index: -2
@@ -21,7 +33,6 @@ header {
 }
 
 .matrix {
-	background-color: black;
 	margin-bottom: 0px;
 	z-index: -9999999999;
 	width: 100%;
@@ -32,8 +43,8 @@ a {
 }
 
 .contenedor {
-	min-height: 100vh;
 	width: 100%;
+	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -42,6 +53,7 @@ a {
 #about .contenedor{
 	min-height: 80vh;
 }
+
 img {
 	height: 100%;
 	width: 100%;
@@ -68,16 +80,10 @@ p {
 }
 
 .container {
-	height: 500px;
-	width: 100vw;
-	padding-bottom: 60px;
-	background-color: black;
-}
-
-.proyects_grid {
-	background: black;
-	margin-top: -20px;
-	height: 100%;
+	width: 100%;
+	padding: 20px 0px;
+	align-items: center;
+	justify-content: center;
 }
 
 .proyects_grid {
@@ -94,6 +100,7 @@ p {
 	position: relative;
 	overflow: hidden ;
 	width: 100%;
+	height: 500px;
 }
 
 .proyects_img {
@@ -130,6 +137,7 @@ p {
 }
 
 #tituloinicio{
+	max-height: 600px;
 	position: absolute;
 	font-size: 40px;
 	padding: 20px;
@@ -145,7 +153,7 @@ p {
 	font-size: 30px;
 	bottom: 0;
 	right: 20px;
-	color: black;
+	color: white;
 	text-shadow: 0px 0px 1px #000000;
 }
 
@@ -161,7 +169,6 @@ p {
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
-	margin-left: -950px;
 }
 
 .boton:hover {
@@ -231,8 +238,6 @@ p {
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
-	animation-delay: 1s;
-	margin-left: -600px;
 }
 
 #nombre2 h1 {
@@ -243,7 +248,6 @@ p {
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
-	margin-left: -600px;
 }
 
 #nombre1 h1:nth-child(1) {
@@ -320,16 +324,13 @@ p {
 	animation-delay: 2.5s;
 }
 
-#about {
-	margin-bottom: -40px;
-}
 
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	padding: 10px 20px;
 }
 
 #about .col-left {
@@ -442,10 +443,11 @@ p {
 	}
 
 footer {
-	background-color: #5BC840;
-	padding: 20px;
+	background-image: linear-gradient(60deg, black -150%, #5bc840 50%, black 200%);
+	height: 35px;
 	width: 100%;
-	text-align: center;
+	padding: 10px;
+	margin-top: 20px;
 }
 
 #icono {
@@ -460,6 +462,21 @@ footer {
 #icono:hover {
 	color: #5BC840;
 	transition: color .2s ease;
+}
+
+ul {
+	text-align: center;
+	list-style-type: none;
+	color: white;
+	font-weight: 500;
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	margin: auto;
+}
+
+li {
+	float: left;
+	margin: 0 40px;
 }
 
 
