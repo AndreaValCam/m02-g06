@@ -213,6 +213,7 @@ p {
 
 #nombre1 {
 	background-image: url(img/Jamerhunt.png);
+	/* foto original: https://www.brownalumnimagazine.com/sites/default/files/inline-images/BtG_Jamer-Hunt_lead.jpg */
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -221,6 +222,7 @@ p {
 }
 #nombre2 {
 	background-image: url(img/Dewey.png);
+	/* foto original: https://deweyhagborg.com/media/pages/bio/4485446640-1643024383/hdh-web.jpg */
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -230,6 +232,7 @@ p {
 
 #ensayo {
 	background-image: url(img/ensayo.png);
+	/*foto original: https://cdn9.dissolve.com/p/D1869_7_030/D1869_7_030_0004_600.jpg */
 	background-size: cover;
 	background-position: top center;
 	position: relative;
